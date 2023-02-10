@@ -1,0 +1,205 @@
+@use 'src/styles/vars' as v;
+
+.sixth {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: v.$third-color;
+    user-select: none;
+    position: relative;
+    padding: 0 0 6rem;
+    @media screen and (max-width: 1200px) {
+        height: 100%;
+    }
+
+    img {
+        position: absolute;
+        left: 0%;
+        top: -20%;
+        scale: (0.8);
+        z-index: 1;
+        margin-left: 5%;
+        @media screen and (max-width: 1050px) {
+            display: none;
+        }
+        
+    }
+
+    &_title {
+        display: flex;
+        align-self: flex-end;
+        margin: 4rem 6rem 0rem 0;
+        font-size: 3rem;
+        font-weight: 800;
+        color: v.$second-color;
+        width: fit-content;
+        @media screen and (max-width: 1050px) {
+            margin: 4rem 0rem 0rem 0;
+            align-self: center;
+            text-align: center;
+        }
+        @media screen and (max-width: 500px) {
+            font-size: 2.5rem;
+        }
+    }
+
+    &_tags {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5rem;
+        filter: drop-shadow(50px 30px 0px v.$first-color);
+        z-index: 1;
+        padding: 2rem;
+
+        @media screen and (max-width: 1210px) {
+            margin-top: 4rem;
+        }
+
+        @media screen and (max-width: 660px) {
+            padding: 1rem;
+            filter: drop-shadow(30px 30px 0px v.$first-color);
+            margin-right: 2rem;
+        }
+        @media screen and (max-width: 584px) {
+            padding: 0rem;
+        }
+
+        &_wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+            clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+            padding: 12rem 6rem;
+            background-color: v.$white-color;
+            width: 50%;
+
+            @media screen and (max-width: 1670px) {
+                width: 60%;
+            }
+
+            @media screen and (max-width: 1370px) {
+                width: 70%;
+            }
+
+            @media screen and (max-width: 1210px) {
+                width: 80%;
+            }
+
+            @media screen and (max-width: 1210px) {
+                width: 80%;
+            }
+
+            @media screen and (max-width: 956px) {
+                width: 90%;
+            }
+
+            @media screen and (max-width: 778px) {
+                padding: 8rem 6rem;
+            }
+
+            @media screen and (max-width: 660px) {
+                width: 95%;
+                clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 100% 100%, 0% 95%, 0% 50%);
+                padding: 8rem 1rem;
+            }
+
+            &_btn {
+                background: v.$first-color;
+                color: v.$white-color;
+                border: 2px solid v.$white-color;
+                padding: 1rem;
+                font-size: 1.8rem;
+                font-weight: 600;
+                border-radius: 1.2rem;
+                box-shadow: 4px 10px 0px v.$second-color;
+                transition: color 1s, background 1.5s, box-shadow 0.55s;
+
+                @media screen and (max-width: 1200px) {
+                    font-size: 1.5rem;
+                }
+
+                @media screen and (max-width: 856px) {
+                    font-size: 1.3rem;
+                }
+
+                @media screen and (max-width: 804px) {
+                    padding: 0.75rem;
+                }
+
+                &:hover {
+                    cursor: pointer;
+                    transition: color 1s, background 1.2s, box-shadow 0.55s;
+                    background: v.$second-color;
+                    color: v.$white-color;
+                    box-shadow: 4px 5px 0px v.$second-color;
+
+                }
+            }
+        }
+    }
+
+    &_shape {
+        position: absolute;
+        bottom: -71.5%;
+        right: 10%;
+        width: 30vw;
+        @media screen and (max-width: 1670px) {
+            right: 5%;
+        }
+        @media screen and (max-width: 1500px) {
+            right: 2%;
+        }
+        @media screen and (max-width: 1370px) {
+            right: -5%;
+        }
+        @media screen and (max-width: 1210px) {
+            right: -10%;
+        }
+        @media screen and (max-width: 1100px) {
+            bottom: -59%;
+            right: -10%;
+        }
+        @media screen and (max-width: 956px) {
+            bottom: -58.5%;
+            right: -15%;
+        }
+        @media screen and (max-width: 888px) {
+            bottom: -58%;
+            right: -20%;
+        }
+        @media screen and (max-width: 778px) {
+            bottom: -61.5%;
+            right: -25%;
+        }
+        @media screen and (max-width: 660px) {
+            bottom: -54.5%;
+            right: -25%;
+        }
+        @media screen and (max-width: 608px) {
+            right: -30%;
+        }
+        @media screen and (max-width: 584px) {
+            bottom: -59%;
+            right: -34%;
+        }
+        @media screen and (max-width: 554px) {
+            bottom: -61.5%;
+            right: -30%;
+        }
+
+        p {
+            color: v.$second-color;
+            font-size: 70rem;
+            rotate: 145deg;
+            @media screen and (max-width: 1100px) {
+                font-size: 60rem;
+            }
+            @media screen and (max-width: 554px) {
+                font-size: 50rem;
+            }
+        }
+    }
+}

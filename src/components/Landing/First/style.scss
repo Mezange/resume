@@ -1,0 +1,262 @@
+@use 'src/styles/vars' as v;
+
+.first {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: v.$third-color;
+
+    &_wrapper {
+        display: flex;
+        height: 80vh;
+        user-select: none;
+        box-sizing: border-box;
+        @media screen and (max-width: 1450px) { 
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &_text {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 4rem;
+            padding: 4rem;
+            width: 70vw;
+            @media screen and (max-width: 1450px) { 
+                padding: 4rem 0;
+                flex: 1;
+                order: 2;
+            }
+            
+    
+            &_bubble {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                gap: 2rem;
+    
+                &_one {
+                    background-color: v.$white-color;
+                    color: v.$fourth-color;
+                    font-size: 2.5rem;
+                    font-weight: 600;
+                    padding: 1rem;
+                    border: 3px solid transparent;
+                    border-radius: 1rem;
+                    box-shadow: 
+                    0px 15px 0px v.$first-color;
+                    transform: translate3d(0, 0.1em, 0em);
+                    transition: box-shadow 0.5s, transform 0.5s;
+                    @media screen and (max-width: 840px) {
+                        font-size: 2rem; 
+                    }
+                    @media screen and (max-width: 682px) {
+                        font-size: 2rem; 
+                    }
+                    &:hover{
+                        transition: box-shadow 0.35s, transform 0.5s;
+                        transform: translate3d(0, 0.3em, 0em);
+                        cursor: pointer;
+                        box-shadow: 
+                            0px 8px 0px v.$first-color;
+                    }
+                    &:active {
+                        transform: scale(1.05);
+                        transition: box-shadow 0.25s, transform 0.5s;
+                        box-shadow: 
+                            0px 0px 0px v.$first-color;
+                    }
+                }
+    
+                &_two {
+                    color: v.$second-color;
+                    background-color: v.$third-color;
+                    font-size: 2.5rem;
+                    font-weight: 600;
+                    padding: 1rem;
+                    border: 3px solid  v.$second-color;
+                    border-radius: 1rem;
+                    box-shadow: 
+                    0px 15px 0px v.$second-color;
+                    transition: box-shadow 0.5s;
+                    @media screen and (max-width: 840px) {
+                        font-size: 2rem; 
+                    }
+                    @media screen and (max-width: 682px) {
+                        font-size: 2rem; 
+                    }
+    
+                    &:hover{
+                        transition: box-shadow 0.35s;
+                        cursor: pointer;
+                        box-shadow: 
+                            0px 8px 0px v.$second-color;
+    
+                    }
+                    &:active {
+                        transform: scaleY(1.05);
+                        transition: box-shadow 0.25s;
+                        box-shadow: 
+                            0px 0px 0px v.$first-color;
+                    }
+                }
+    
+                &_three {
+                    color: v.$first-color;
+                    background-color: v.$white-color;
+                    font-size: 2.5rem;
+                    font-weight: 600;
+                    padding: 1rem;
+                    border: 3px solid transparent;
+                    border-radius: 1rem;
+                    box-shadow: 
+                    0px 15px 0px v.$first-color;
+                    transition: box-shadow 0.5s;
+                    @media screen and (max-width: 840px) {
+                        font-size: 2rem; 
+                    }
+                    @media screen and (max-width: 682px) {
+                        font-size: 2rem; 
+                    }
+
+                    &:hover{
+                        transition: box-shadow 0.35s;
+                        cursor: pointer;
+                        box-shadow: 
+                            0px 8px 0px v.$first-color;
+    
+                    }
+                    &:active {
+                        transform: scaleY(1.05);
+                        transition: box-shadow 0.25s;
+                        box-shadow: 
+                            0px 0px 0px v.$first-color,
+                    }
+                }
+    
+                &_four {
+                    color: v.$white-color;
+                    background-color: v.$second-color;
+                    font-size: 2.5rem;
+                    font-weight: 500;
+                    padding: 1rem;
+                    border: 3px solid transparent;
+                    border-radius: 1rem;
+                    box-shadow: 
+                    0px 15px 0px v.$first-color;
+                    transition: box-shadow 0.5s;
+                    @media screen and (max-width: 840px) {
+                        font-size: 2rem; 
+                    }
+                    @media screen and (max-width: 682px) {
+                        font-size: 2rem; 
+                    }
+    
+                    &:hover{
+                        transition: box-shadow 0.35s;
+                        cursor: pointer;
+                        box-shadow: 
+                            0px 8px 0px v.$first-color,
+    
+                    }
+                    &:active {
+                        transform: scaleY(1.05);
+                        transition: box-shadow 0.25s;
+                        box-shadow: 
+                            0px 0px 0px v.$first-color,
+                    }
+                }
+            }
+        }
+    
+        &_shape {
+            position: absolute;
+            bottom: 35%;
+            right: -5%;
+            width: 30vw;
+            @media screen and (max-width: 1450px) { 
+                display: flex;
+                align-self: flex-end;
+                width: 30vw;
+                top: -40%;
+                right: 0%;
+                flex: 1;
+                order: 1;
+            }
+            @media screen and (max-width: 554px) {
+                right: 12%;
+            }
+            @media screen and (max-width: 376px) { 
+                top: -60%;
+                right: 45%;
+            }
+
+            
+            p {
+                color: v.$first-color;
+                font-size: 70rem;
+                rotate: 90deg;
+                @media screen and (max-width: 1450px) { 
+                    font-size: 50rem;
+                }
+                @media screen and (max-width: 1230px) { 
+                    font-size: 45rem;
+                }
+                @media screen and (max-width: 654px) { 
+                    font-size: 50rem;
+                }
+                @media screen and (max-width: 376px) { 
+                    font-size: 50rem;
+                }
+
+            }
+        }
+    }
+
+    &_scroll {
+        display: flex;
+        align-items: center;
+        align-self: center;
+        height: 20vh;
+
+        &_box {
+            width: 64px;
+            height: 136px;
+            background: transparent;
+            border: 3px solid v.$first-color;
+            border-radius: 60px;
+            position: relative;
+
+            &_circle {
+                position: absolute;
+                width: 38px;
+                height: 38px;
+                border-radius: 50%;
+                background: v.$second-color;
+                inset: 0;
+                margin: auto;
+                animation: circle 2.5s ease-in-out infinite alternate;
+            }
+        }
+
+        &_text {
+            margin-left: 16px;
+            font-size: 2rem;
+            font-weight: 600;
+            color: v.$first-color;
+        }
+    }
+
+    
+}
+
+@keyframes circle {
+    0% {
+      transform: translateY(-35px);
+    }
+    100% {
+      transform: translateY(35px);
+    }
+}

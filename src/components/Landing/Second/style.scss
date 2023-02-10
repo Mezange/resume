@@ -1,0 +1,360 @@
+@use 'src/styles/vars' as v;
+
+.second {
+    display: flex;
+    height: 100vh;
+    background-color: v.$third-color;
+    overflow: hidden;
+    @media screen and (max-width: 1200px) {
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        background-color: v.$first-color;
+    }
+
+    &_wrapper {
+        display: flex;
+        height: 100vh;
+        margin-top: 15rem;
+        @media screen and (max-width: 1200px) {
+            margin-top: 4rem;
+            height: 100%;
+        }
+        
+        
+        &_menu {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50vw;
+            background-color: v.$first-color;
+            border-top-right-radius: 1.4rem;
+            user-select: none;
+            @media screen and (max-width: 1200px) {
+                width: 100vw;
+                border-top-right-radius: 0;
+                height: 100%;
+            }
+            @media screen and (max-width: 810px) {
+                flex-direction: column;
+                display: block;
+                align-items: center;
+                justify-content: center;
+            }
+
+            h3 {
+                color: v.$second-color;
+                font-size: 3rem;
+                font-weight: 800;
+                transform: rotate(-90deg);
+                white-space: nowrap;
+                width: 20%;
+                @media screen and (max-width: 1200px) {
+                    width: 10%;
+                }
+                @media screen and (max-width: 810px) {
+                    transform: rotate(0deg);
+                    width: 100%;
+                    text-align: center;
+                    height: 0vh;
+                }
+                
+            }
+
+            &_contain {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 80%;
+                @media screen and (max-width: 1566px) {
+                    margin-top: 4rem;
+                }
+                @media screen and (max-width: 1200px) {
+                    flex-direction: row;
+                    width: 100%;
+                    margin-top: 0rem;
+                    border-bottom: 3px dashed v.$fourth-color;
+                    margin-right: 4rem;
+                }
+                @media screen and (max-width: 1044px) {
+                    flex-direction: column;
+                }
+
+                &_image {
+                    position: absolute;
+                    top: -15rem;
+                    background-color: v.$white-color;
+                    border-radius: 1.5rem;
+                    scale: 0.7;
+                    @media screen and (max-width: 1324px) {
+                        scale: 0.6;
+                    }
+                    @media screen and (max-width: 1200px) {
+                        display: flex;
+                        position: relative;
+                        top: 0;
+                        margin: 0;
+                    }
+                    @media screen and (max-width: 468px) {
+                        scale: 0.5;
+                    }
+                    @media screen and (max-width: 350px) {
+                        scale: 0.4;
+                    }
+
+                }
+
+                &_skills {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    padding: 1rem;
+                    gap: 1.5rem;
+                    @media screen and (max-width: 1200px) {
+                        margin-bottom: 4rem;
+                    }
+
+                    &_one {
+                        background: v.$white-color;
+                        color: v.$first-color;
+                        border: 2px solid v.$white-color;
+                        padding: 1rem;
+                        font-size: 1.8rem;
+                        font-weight: 600;
+                        border-radius: 1.2rem;
+                        box-shadow: 4px 10px 0px v.$second-color;
+                        transition: color 1s, background 1.5s, box-shadow 0.55s;
+                        order: 1;
+                        white-space:nowrap;
+
+                        @media screen and (max-width: 1492px) {
+                            order: 2;
+                        }
+                        @media screen and (max-width: 1200px) {
+                            flex: 1;
+                            text-align: center;
+                        }
+                        
+
+                        &:hover {
+                            cursor: pointer;
+                            transition: color 1s, background 1.2s, box-shadow 0.55s;
+                            background: v.$second-color;
+                            color: v.$white-color;
+                            box-shadow: 4px 5px 0px v.$white-color;
+
+                        }
+                    }
+
+                    &_two {
+                        background: v.$first-color;
+                        color: v.$white-color;
+                        border: 2px solid v.$white-color;
+                        padding: 1rem;
+                        font-size: 1.8rem;
+                        font-weight: 600;
+                        border-radius: 1.2rem;
+                        box-shadow: 4px 10px 0px v.$white-color;
+                        transition: color 1s, background 1.5s, box-shadow 0.55s;
+                        order: 2;
+                        white-space:nowrap;
+                        @media screen and (max-width: 1492px) {
+                            order: 1;
+                        }
+                        @media screen and (max-width: 1200px) {
+                            flex: 1;
+                            text-align: center;
+                        }
+
+                        &:hover {
+                            cursor: pointer;
+                            transition: color 1s, background 1.2s, box-shadow 0.55s;
+                            background: v.$second-color;
+                            color: v.$white-color;
+                            box-shadow: 4px 5px 0px v.$white-color;
+
+                        }
+                    }
+
+                    &_three {
+                        background: v.$white-color;
+                        color: v.$first-color;
+                        border: 2px solid v.$white-color;
+                        padding: 1rem;
+                        font-size: 1.8rem;
+                        font-weight: 600;
+                        border-radius: 1.2rem;
+                        box-shadow: 4px 10px 0px v.$fourth-color;
+                        transition: color 1s, background 1.5s, box-shadow 0.55s;
+                        order: 3;
+                        white-space:nowrap;
+                        @media screen and (max-width: 1200px) {
+                            flex: 1;
+                            text-align: center;
+                        }
+
+                        &:hover {
+                            cursor: pointer;
+                            transition: color 1s, background 1.2s, box-shadow 0.55s;
+                            background: v.$fourth-color;
+                            color: v.$third-color;
+                            box-shadow: 4px 5px 0px v.$white-color;
+                        }
+                    }
+
+                    &_four {
+                        background: v.$first-color;
+                        color: v.$white-color;
+                        border: 2px solid v.$white-color;
+                        padding: 1rem;
+                        font-size: 1.6rem;
+                        font-weight: 600;
+                        border-radius: 1.2rem;
+                        box-shadow: 4px 10px 0px v.$white-color;
+                        transition: color 1s, background 1.5s, box-shadow 0.55s;
+                        order: 4;
+                        white-space:nowrap;
+                        @media screen and (max-width: 1200px) {
+                            flex: 1;
+                            text-align: center;
+                        }
+
+                        &:hover {
+                            cursor: pointer;
+                            transition: color 1s, background 1.2s, box-shadow 0.55s;
+                            background: v.$second-color;
+                            color: v.$white-color;
+                            box-shadow: 4px 5px 0px v.$white-color;
+                        }
+                        
+                    }
+
+                    &_five {
+                        background: v.$white-color;
+                        color: v.$first-color;
+                        border: 2px solid v.$white-color;
+                        padding: 1rem;
+                        font-size: 1.8rem;
+                        font-weight: 600;
+                        border-radius: 1.2rem;
+                        box-shadow: 4px 10px 0px v.$fourth-color;
+                        transition: color 1s, background 1.5s, box-shadow 0.55s;
+                        order: 5;
+                        white-space:nowrap;
+                        @media screen and (max-width: 1492px) {
+                            order: 6;
+                        }
+                        @media screen and (max-width: 1200px) {
+                            flex: 1;
+                            text-align: center;
+                        }
+
+                        &:hover {
+                            cursor: pointer;
+                            transition: color 1s, background 1.2s, box-shadow 0.55s;
+                            background: v.$fourth-color;
+                            color: v.$third-color;
+                            box-shadow: 4px 5px 0px v.$white-color;
+                        }
+                        
+                    }
+
+                    &_six {
+                        background: v.$first-color;
+                        color: v.$white-color;
+                        border: 2px solid v.$white-color;
+                        padding: 1rem;
+                        font-size: 1.6rem;
+                        font-weight: 600;
+                        border-radius: 1.2rem;
+                        box-shadow: 4px 10px 0px v.$second-color;
+                        transition: color 1s, background 1.5s, box-shadow 0.55s;
+                        order: 6;
+                        white-space:nowrap;
+                        @media screen and (max-width: 1492px) {
+                            order: 5;
+                        }
+                        @media screen and (max-width: 1200px) {
+                            flex: 1;
+                            text-align: center;
+                        }
+
+                        &:hover {
+                            cursor: pointer;
+                            transition: color 1s, background 1.2s, box-shadow 0.55s;
+                            background: v.$third-color;
+                            color: v.$fourth-color;
+                            box-shadow: 4px 5px 0px v.$fourth-color;
+
+                        }
+                    }
+                }
+            }
+        }
+
+        &_text {
+            display: flex;
+            width: 50%;
+            margin: 8rem 4rem;
+            @media screen and (max-width: 1486px) {
+                margin: 8rem 3rem;
+            }
+            @media screen and (max-width: 1346px) {
+                margin: 8rem 2rem;
+            }
+            @media screen and (max-width: 1200px) {
+                margin: 6rem 6rem;
+                width: fit-content;
+            }
+            @media screen and (max-width: 810px) {
+                margin: 6rem 4rem;
+            }
+            @media screen and (max-width: 568px) {
+                margin: 4rem 2rem;
+            }
+
+            
+            p {
+                color: v.$fourth-color;
+                text-align: justify;
+                font-size: 1.8rem;
+                font-weight: 300;
+                letter-spacing: 0.2rem;
+                line-height: 2.4rem;
+                @media screen and (max-width: 1855px) {
+                    font-size: 1.7rem; 
+                }
+                @media screen and (max-width: 1782px) {
+                    font-size: 1.5rem; 
+                    letter-spacing: 0.15rem;
+                }
+                @media screen and (max-width: 1570px) {
+                    letter-spacing: 0.1rem;
+                }
+                @media screen and (max-width: 1422px) {
+                    letter-spacing: 0.04rem;
+                }
+                @media screen and (max-width: 1282px) {
+                    font-size: 1.4rem; 
+                    letter-spacing: 0.02rem;
+                }
+                @media screen and (max-width: 1200px) {
+                    color: v.$third-color;
+                    font-size: 1.6rem;
+                    line-height: 2rem;
+                }
+                @media screen and (max-width: 810px) {
+                    font-size: 1.5rem;
+                    line-height: 1.8rem;
+                }
+                @media screen and (max-width: 568px) {
+                    font-size: 1.4rem;
+                }
+                @media screen and (max-width: 400px) {
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
+}

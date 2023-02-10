@@ -1,0 +1,19 @@
+@use 'vars' as v;
+@use 'reset';
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter';
+    overflow-x: hidden;
+}
+
+#root {
+    overflow: hidden;
+}
+
+::selection {
+    background-color: v.$first-color;
+}
+

@@ -1,0 +1,235 @@
+@use 'src/styles/vars' as v;
+
+.third {
+    display: flex;
+    height: 100%;
+    background-color: v.$second-color;
+    overflow: hidden;
+    user-select: none;
+    position: relative;
+    @media screen and (max-width: 882px) {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    img {
+        position: absolute;
+        right: 0;
+        top: 20%;
+        @media screen and (max-width: 510px) {
+            display: none;
+        }
+    }
+
+    &_xp1 {
+        display: flex;
+        position: relative;
+        &_wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50vw;
+            border-right: 1.5px solid v.$fourth-color;
+            margin: 4rem 0;
+            @media screen and (max-width: 882px) {
+                flex-direction: column;
+                width: 100%;
+                border-right: 0;
+                margin: 4rem 0 0;
+            }
+
+
+            h3 {
+                color: v.$fourth-color;
+                font-size: 3rem;
+                font-weight: 800;
+                transform: rotate(-90deg);
+                white-space: nowrap;
+                width: 20%;
+                @media screen and (max-width: 882px) {
+                    transform: rotate(0deg);
+                    text-decoration: underline;
+                    width: 100%;
+                    text-align: center;
+                }
+                @media screen and (max-width: 400px) {
+                    font-size: 2.5rem;
+                }
+                
+            }
+
+            &_contain {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 3rem;
+                @media screen and (max-width: 1700px) {
+                    gap: 2rem;
+                }
+                @media screen and (max-width: 1002px) {
+                    gap: 1rem;
+                }
+                @media screen and (max-width: 882px) {
+                    gap: 0rem;
+                    margin-top: 2rem;
+                    width: 100%;
+                }
+
+                &_info {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: left;
+                    justify-content: center;
+                    padding: 2rem 10rem;
+                    gap: 0.5rem;
+                    border-bottom: 2px dashed v.$first-color;
+                    width: 90%;
+
+                    @media screen and (max-width: 1700px) {
+                        padding: 2rem 2rem; 
+                    }
+    
+                    h5 {
+                        font-size: 2.5rem;
+                        font-style: italic;
+                        font-weight: 500;
+                        color: v.$third-color;
+                    }
+    
+                    h4 {
+                        font-size: 2.5rem;
+                        font-weight: 800;
+                        color: v.$first-color;
+                        text-decoration: underline;
+                        @media screen and (max-width: 1700px) {
+                            font-size: 2.1rem;
+                        }
+                        @media screen and (max-width: 400px) {
+                            font-size: 2rem;
+                        }
+                    }
+    
+                    h2 {
+                        font-size: 2.5rem;
+                        font-weight: 100;
+                        color: v.$third-color;
+                        @media screen and (max-width: 1700px) {
+                            font-size: 2.1rem;
+                        }
+                        @media screen and (max-width: 400px) {
+                            font-size: 1.9rem;
+                        }
+                    }
+    
+                    p {
+                        font-size: 1.5rem;
+                        font-weight: 200;
+                        color: v.$white-color;
+                        @media screen and (max-width: 1700px) {
+                            font-size: 1.3rem;
+                        }
+                        @media screen and (max-width: 400px) {
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+
+    &_xp2 {
+        display: flex;
+        &_wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50vw;
+            border-left: 1.5px solid v.$fourth-color;
+            margin: 4rem 0;
+            @media screen and (max-width: 882px) {
+                margin: 0 0 4rem;
+                flex-direction: column;
+                width: 100%;
+                border-left: 0;
+            }
+
+            &_contain {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 3rem;
+                width: 100%;
+                @media screen and (max-width: 1700px) {
+                    gap: 2rem;
+                }
+                @media screen and (max-width: 1002px) {
+                    gap: 1rem;
+                }
+                @media screen and (max-width: 882px) {
+                    gap: 0rem;
+                }
+
+                &_info {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: left;
+                    justify-content: center;
+                    padding: 2rem 10rem;
+                    gap: 0.5rem;
+                    width: 90%;
+                    border-bottom: 2px dashed v.$first-color;
+                    
+                    @media screen and (max-width: 1700px) {
+                        padding: 2rem 2rem;
+                    }
+                    
+                    h5 {
+                        font-size: 2.5rem;
+                        font-style: italic;
+                        font-weight: 500;
+                        color: v.$third-color;
+                    }
+    
+                    h4 {
+                        font-size: 2.5rem;
+                        font-weight: 800;
+                        color: v.$first-color;
+                        text-decoration: underline;
+                        @media screen and (max-width: 1700px) {
+                            font-size: 2.1rem;
+                        }
+                        @media screen and (max-width: 400px) {
+                            font-size: 2rem;
+                        }
+                    }
+    
+                    h2 {
+                        font-size: 2.5rem;
+                        font-weight: 100;
+                        color: v.$third-color;
+                        @media screen and (max-width: 1700px) {
+                            font-size: 2.1rem;
+                        }
+                        @media screen and (max-width: 400px) {
+                            font-size: 1.9rem;
+                        }
+                    }
+    
+                    p {
+                        font-size: 1.5rem;
+                        font-weight: 200;
+                        color: v.$white-color;
+                        @media screen and (max-width: 1700px) {
+                            font-size: 1.3rem;
+                        }
+                        @media screen and (max-width: 400px) {
+                            font-size: 1.2rem;
+                        }
+                    }
+    
+                }
+            }
+        }
+    }
+}
