@@ -78,7 +78,7 @@ function Sixth() {
     return (
         <>
             <section className='sixth'>
-                <img ref={computer_Anim} src='resume/assets/images/computer.png' alt='computer' />
+                <img ref={computer_Anim} src='/resume/assets/images/computer.png' alt='computer' />
                 <div className='sixth_title'>
                     <h2>SKILLS TECHNIQUES</h2>
                 </div>

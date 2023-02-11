@@ -144,7 +144,7 @@ function Second() {
                         <h3 ref={skills_Anim}>SOFT SKILLS</h3>
                         <div className='second_wrapper_menu_contain'>
                             <div ref={bgImage} className='second_wrapper_menu_contain_image'>
-                                <img ref={image_Anim} src="resume/assets/images/avatar.png" alt="avatar" />
+                                <img ref={image_Anim} src="/resume/assets/images/avatar.png" alt="avatar" />
                             </div>
                             <div ref={button_Anim} className="second_wrapper_menu_contain_skills">
                                     <div className="second_wrapper_menu_contain_skills_one">
