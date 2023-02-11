@@ -5,7 +5,9 @@
     flex-direction: column;
     height: 100vh;
     background-color: v.$third-color;
-    overflow-x: hidden;
+    @media screen and (max-width: 1200px) { 
+        height: 100%;
+    }
 
     &_wrapper {
         display: flex;
@@ -15,6 +17,9 @@
         @media screen and (max-width: 1450px) { 
             flex-direction: column;
             align-items: center;
+        }
+        @media screen and (max-width: 1200px) { 
+            height: 80%;
         }
 
         &_text {
@@ -186,13 +191,10 @@
                 flex: 1;
                 order: 1;
             }
-            @media screen and (max-width: 554px) {
-                right: 12%;
+            @media screen and (max-width: 1200px) {
+               display: none;
             }
-            @media screen and (max-width: 376px) { 
-                top: -60%;
-                right: 45%;
-            }
+
 
             
             p {

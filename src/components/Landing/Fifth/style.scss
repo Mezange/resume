@@ -6,7 +6,7 @@
     background-color: v.$first-color;
     user-select: none;
     position: relative;
-    overflow-x: hidden;
+    
     @media screen and (max-width: 882px) {
         flex-direction: column;
         height: 100%;
