@@ -158,7 +158,7 @@ function Third() {
     return (
         <>
           <section className='third'>
-            <img ref={shape_Anim} src='/assets/images/polygon.png' alt='polygon' />
+            <img ref={shape_Anim} src='resume/assets/images/polygon.png' alt='polygon' />
                 <div className='third_xp1'>
                     <div className='third_xp1_wrapper'>
                       <h3 ref={xpTitle_Anim}>EXPERIENCES</h3>

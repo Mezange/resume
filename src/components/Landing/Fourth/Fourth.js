@@ -38,26 +38,26 @@ function Fourth() {
                 <section className='fourth_gallery'>
                     <ul className='wrapper'>
                     <li className='fourth_gallery_one'>
-                            <img src='/assets/nft/1228.png' alt='' />
+                            <img src='resume/assets/nft/1228.png' alt='' />
                         </li>
                         <li className='fourth_gallery_two'>
-                            <img src='/assets/nft/1555.png' alt='' />
+                            <img src='resume/assets/nft/1555.png' alt='' />
                         </li>
                         <li className='fourth_gallery_three'>
-                            <img src='/assets/nft/1827.png' alt='' />
+                            <img src='resume/assets/nft/1827.png' alt='' />
                         </li>
                     </ul>
                 </section>
                 <section className='fourth_gallery'>
                     <ul className='wrapper'>
                         <li className='fourth_gallery_one'>
-                            <img src='/assets/nft/1944.png' alt='' />
+                            <img src='resume/assets/nft/1944.png' alt='' />
                         </li>
                         <li className='fourth_gallery_two'>
-                            <img src='/assets/nft/1968.png' alt='' />
+                            <img src='resume/assets/nft/1968.png' alt='' />
                         </li>
                         <li className='fourth_gallery_three'>
-                            <img src='/assets/nft/1985.png' alt='' />
+                            <img src='resume/assets/nft/1985.png' alt='' />
                         </li>
                     </ul>
                 </section>

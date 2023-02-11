@@ -17,7 +17,7 @@ function App() {
     return (
             <Routes>
                 {/* HOME */}
-                <Route path='/' element={
+                <Route path='/resume' element={
                         <Landing />
                       }
                 />

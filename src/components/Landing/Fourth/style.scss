@@ -7,6 +7,7 @@
     width: 100%;
     background-color: v.$third-color;
     user-select: none;
+    overflow-x: hidden;
 
     &_text {
         display: flex;

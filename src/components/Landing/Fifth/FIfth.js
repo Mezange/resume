@@ -135,7 +135,7 @@ function Fifth() {
       return (
           <>
             <section className='fifth'>
-              <img ref={shape_fifth} src='/assets/images/citation.png' alt='citation' />
+              <img ref={shape_fifth} src='resume/assets/images/citation.png' alt='citation' />
                   <div className='fifth_xp1'>
                       <div className='fifth_xp1_wrapper'>
                         <h3 ref={xpTitle_fifth}>ETUDES</h3>
