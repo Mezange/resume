@@ -20,7 +20,7 @@ function First() {
         const AnimBtn1 = first_Btn_Anim.current;
         gsap.fromTo( AnimBtn1, 
             {
-                y : -200,
+                y : -100,
                 opacity : 0,
             },
             {
@@ -49,7 +49,6 @@ function First() {
                 },
                 opacity : 1,
                 scale: 1,
-
                 duration: 1,
                 delay: 2,
                 ease: "bounce",
