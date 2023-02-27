@@ -178,7 +178,7 @@ function Third() {
                            <h2>OWNPAGE</h2>
                            <p>Stage d’observation au sein du
                             service développement qui
-                            gèrent les newsletters de
+                            gère les newsletters de
                             grands groupes de presse
                             européens</p>
                         </div>
