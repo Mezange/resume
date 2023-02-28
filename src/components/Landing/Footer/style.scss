@@ -2,9 +2,11 @@
 
 .footer {
     display: flex;
-    align-items: center;
+    flex-direction: column;
     height: 50vh;
     background-color: v.$white-color;
+    padding: 4rem 0;
+    gap: 2rem;
     
     &_wrapper {
         display: flex;
@@ -52,6 +54,21 @@
         h5 {
             font-size: 3rem;
             font-weight: 600;
+        }
+    }
+
+    &_social {
+        display: flex;
+        gap: 1rem;
+        margin-left: 10rem;
+        img {
+            transition: scale 1s, filter 2s;
+            &:hover {
+                cursor: pointer;
+                scale: 1.3;
+                transition: scale 0.75s, filter 2s;
+                filter: grayscale(100);
+            }
         }
     }
 }
