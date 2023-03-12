@@ -45,7 +45,6 @@
         flex-direction: row;
         width: 100vw;
         background-color: v.$third-color;
-
         &_one {
             width: 33.33%;
             @media screen and (max-width: 1300px) {
@@ -54,6 +53,13 @@
             img {
                 width: 1024px;
                 height: 774px;
+                transition: scale 1s, border-radius 1.5s;
+                &:hover {
+                    transition: scale 1s, border-radius 1s;
+                    cursor: pointer;
+                    scale: (1.1);
+                    border-radius: 1.5rem;
+                }
                 @media screen and (max-width: 1200px) {
                     width: 924px;
                     height: 674px;
@@ -83,6 +89,13 @@
             img {
                 width: 1024px;
                 height: 774px;
+                transition: scale 1s, border-radius 1s;
+                &:hover {
+                    transition: scale 1s, border-radius 1s;
+                    cursor: pointer;
+                    scale: (1.1);
+                    border-radius: 1.5rem;
+                }
                 @media screen and (max-width: 1200px) {
                     width: 924px;
                     height: 674px;
@@ -111,6 +124,13 @@
             img {
                 width: 1024px;
                 height: 774px;
+                transition: scale 1s, border-radius 1s;
+                &:hover {
+                    transition: scale 1s, border-radius 1s;
+                    cursor: pointer;
+                    scale: (1.1);
+                    border-radius: 1.5rem;
+                }
             }
             @media screen and (max-width: 1300px) {
                 display: none;
