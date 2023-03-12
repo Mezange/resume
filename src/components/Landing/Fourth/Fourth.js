@@ -51,7 +51,7 @@ function Fourth() {
                 <section className='fourth_gallery'>
                     <ul className='wrapper'>
                         <li className='fourth_gallery_one'>
-                            <img src='/resume/assets/nft/1968.png' alt='nft' />
+                            <a href='https://www.figma.com/@mezange' target="_blank" rel="noopener noreferrer"><img src='/resume/assets/images/retro.png' alt='retro'/></a>
                         </li>
                         <li className='fourth_gallery_two'>
                         <a href='https://www.figma.com/@mezange' target="_blank" rel="noopener noreferrer"><img src='/resume/assets/images/sk8.jpg' alt='shop' /></a>
