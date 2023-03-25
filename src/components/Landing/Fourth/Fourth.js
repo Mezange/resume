@@ -32,7 +32,7 @@ function Fourth() {
             <div className='fourth'>
                 <section className='fourth_text'>
                     <div className='wrapper'>
-                    COLLECTION - ARTIST - NFT - COLLECTION - ARTIST - NFT - COLLECTION - ARTIST - NFT - COLLECTION - ARTIST - NFT 
+                    COLLECTION - ARTIST - WORKS - COLLECTION - ARTIST - WORKS - COLLECTION - ARTIST - WORKS - COLLECTION - ARTIST - WORKS 
                     </div>
                 </section>
                 <section className='fourth_gallery'>
@@ -41,7 +41,7 @@ function Fourth() {
                             <img src='/resume/assets/nft/1228.png' alt='nft' />
                         </li>
                         <li className='fourth_gallery_two'>
-                            <img src='/resume/assets/nft/1944.png' alt='nft' />
+                            <img src='/resume/assets/nft/1985.png' alt='nft' />
                         </li>
                         <li className='fourth_gallery_three'>
                         <a href='https://www.figma.com/@mezange' target="_blank" rel="noopener noreferrer"><img src='/resume/assets/images/date.jpg' alt='date' /></a>
@@ -57,7 +57,8 @@ function Fourth() {
                         <a href='https://www.figma.com/@mezange' target="_blank" rel="noopener noreferrer"><img src='/resume/assets/images/sk8.jpg' alt='shop' /></a>
                         </li>
                         <li className='fourth_gallery_three'>
-                            <img src='/resume/assets/nft/1985.png' alt='nft' />
+                        <a href='https://www.figma.com/@mezange' target="_blank" rel="noopener noreferrer">
+                            <img src='/resume/assets/images/transport.png' alt='transport landing' /></a>
                         </li>
                     </ul>
                 </section>

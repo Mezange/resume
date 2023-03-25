@@ -89,7 +89,7 @@
             img {
                 width: 1024px;
                 height: 774px;
-                transition: scale 1s, border-radius 1s;
+                transition: scale 1s, border-radius 1.5s;
                 &:hover {
                     transition: scale 1s, border-radius 1s;
                     cursor: pointer;
@@ -116,11 +116,13 @@
                     height: 374px;
                 }
             }
-  
         }
         &_three {
             width: 33.33%;
-            
+            z-index: -3;
+            &:hover {
+                z-index: 1;
+            }
             img {
                 width: 1024px;
                 height: 774px;
