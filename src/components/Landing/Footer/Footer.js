@@ -17,7 +17,7 @@ function Footer() {
                     <h4>mezange.booking@gmail.com</h4>
                 </div>
                 <div className='footer_social'>
-                    <a href='https://www.linkedin.com/in/emeric-loyer' target="_blank" rel="noopener noreferrer"><img src="/resume/assets/images/linkedin.svg" alt="avatar" /></a>
+                    {/* <a href='https://www.linkedin.com' target="_blank" rel="noopener noreferrer"><img src="/resume/assets/images/linkedin.svg" alt="avatar" /></a> */}
                 </div>
             </footer>
         </>
